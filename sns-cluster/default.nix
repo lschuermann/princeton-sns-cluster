@@ -170,6 +170,9 @@ in
     # Enable the firewall (OpenSSH is always automatically allowed):
     networking.firewall.enable = true;
 
+    # Set the domain:
+    networking.domain = "cs.princeton.edu";
+
     # Save energy when system idling:
     powerManagement.cpuFreqGovernor = lib.mkDefault "ondemand";
 
